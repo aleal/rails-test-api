@@ -1,11 +1,12 @@
 class DogsController < ApplicationController
+  before_action :authenticate_request
   before_action :set_dog, only: [:show, :update, :destroy]
 
   # GET /dogs
   def index
     @dogs = Dog.all
 
-    render json: @dogs
+    render json: @dogs , include: ['user']
   end
 
   # GET /dogs/1

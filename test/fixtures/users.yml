@@ -1,13 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  email: MyString
-  password_digest: MyString
-  avatar: MyText
-
+  name: "Aleal"
+  email: "aleal4343@gmail.com"
+  password_digest: "$2a$10$onTDtxIKcqZJgKeIen.w7.ErdNTxXFKCI43OLS0IVDQVzjM8CD8x6"
+  avatar: "/avatars/default.png"
 two:
-  name: MyString
-  email: MyString
-  password_digest: MyString
-  avatar: MyText
+  name: "Aleal2"
+  email: "aleal43432@gmail.com"
+  password_digest: "$2a$10$onTDtxIKcqZJgKeIen.w7.ErdNTxXFKCI43OLS0IVDQVzjM8CD8x6"
+  avatar: "/avatars/default.png"
