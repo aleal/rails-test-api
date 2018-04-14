@@ -6,7 +6,7 @@
 # Read more: https://github.com/cyu/rack-cors
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
    allow do
-     origins 'localhost:8080'
+     origins 'localhost:8080','intense-inlet-20497.herokuapp.com'
 
      resource '*',
        headers: :any,
