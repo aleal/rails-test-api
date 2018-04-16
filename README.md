@@ -3,6 +3,7 @@
 ## Setup
 
 ```
+cd <project-folder>
 rbenv install 2.3.5
 rbenv local 2.3.5
 gem install bundler
