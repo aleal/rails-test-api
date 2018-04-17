@@ -5,8 +5,13 @@ class DogsController < ApplicationController
   # GET /dogs
   def index
     @dogs = Dog.all
-
-    render json: @dogs , include: ['user']
+    users = @dogs.map{|dog| dog.user}.uniq
+    data = {
+	dogs: @dogs,
+        users:  Hash[users.map{|user| [user.id, user]}],
+        liked_dog_ids: @current_user.liked_dog_ids    
+    }
+    render json: data
   end
 
   # GET /dogs/1
